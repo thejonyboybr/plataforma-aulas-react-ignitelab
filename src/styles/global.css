@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-gray-900 text-gray-100;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.button-blue {
+  @apply p-4 text-sm flex items-center rounded border border-blue-500 text-blue-500 font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors;
+}
+
+.button-green {
+  @apply p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors;
+}
+
+.icone {
+  @apply rounded-bl rounded-tl;
+}
+
+@media (max-width: 1100px) {
+  .buttons,
+  .buttons2 {
+    @apply w-full;
+  }
+  .buttons {
+    @apply flex-wrap;
+  }
+}
+@media (max-width: 400px) {
+  .button-icone {
+    @apply p-3;
+  }
+  .button-content {
+    @apply p-3;
+  }
+  .button-arrow {
+    @apply p-3;
+  }
+  .header {
+    @apply justify-start;
+  }
+  .logo {
+    @apply ml-4;
+  }
+}
